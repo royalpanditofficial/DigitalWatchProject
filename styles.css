@@ -1,0 +1,64 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.watch-container {
+    text-align: center;
+    color: #b76e79; /* Rose gold color */
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2); /* Text shadow */
+}
+
+.quote-container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 20px auto;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.quote {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 80%;
+    color: #333; /* Dark text color */
+}
+
+.digital-watch {
+    width: 200px;
+    height: 80px;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5em;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 20px auto;
+}
+
+.made-by {
+    font-size: 0.8em;
+    color: #555;
+}
+
+/* Optional: Animation for digital watch */
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+.digital-watch #time {
+    animation: blink 1s infinite;
+}
